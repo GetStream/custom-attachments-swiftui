@@ -11,6 +11,8 @@
 		ACD0C1A22A2E067700103CB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1A12A2E067700103CB2 /* ContentView.swift */; };
 		ACD0C1A42A2E067800103CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD0C1A32A2E067800103CB2 /* Assets.xcassets */; };
 		ACD0C1A72A2E067800103CB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD0C1A62A2E067800103CB2 /* Preview Assets.xcassets */; };
+		ACD0C1AF2A2E06EB00103CB2 /* StreamChatSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ACD0C1AE2A2E06EB00103CB2 /* StreamChatSwiftUI */; };
+		ACD0C1B12A2E07C500103CB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1B02A2E07C500103CB2 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		ACD0C1A12A2E067700103CB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ACD0C1A32A2E067800103CB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD0C1A62A2E067800103CB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ACD0C1B02A2E07C500103CB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD0C1AF2A2E06EB00103CB2 /* StreamChatSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 				ACD0C1A12A2E067700103CB2 /* ContentView.swift */,
 				ACD0C1A32A2E067800103CB2 /* Assets.xcassets */,
 				ACD0C1A52A2E067800103CB2 /* Preview Content */,
+				ACD0C1B02A2E07C500103CB2 /* AppDelegate.swift */,
 			);
 			path = StreamChatCustomAttachments;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = StreamChatCustomAttachments;
+			packageProductDependencies = (
+				ACD0C1AE2A2E06EB00103CB2 /* StreamChatSwiftUI */,
+			);
 			productName = StreamChatCustomAttachments;
 			productReference = ACD0C19C2A2E067700103CB2 /* StreamChatCustomAttachments.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = ACD0C1932A2E067700103CB2;
+			packageReferences = (
+				ACD0C1AD2A2E06EB00103CB2 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */,
+			);
 			productRefGroup = ACD0C19D2A2E067700103CB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD0C1B12A2E07C500103CB2 /* AppDelegate.swift in Sources */,
 				ACD0C1A22A2E067700103CB2 /* ContentView.swift in Sources */,
 				ACD0C1A02A2E067700103CB2 /* StreamChatCustomAttachmentsApp.swift in Sources */,
 			);
@@ -270,6 +282,7 @@
 				DEVELOPMENT_TEAM = JY49624W8T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "In order to send photos we need access to your library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +312,7 @@
 				DEVELOPMENT_TEAM = JY49624W8T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "In order to send photos we need access to your library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACD0C1AD2A2E06EB00103CB2 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GetStream/stream-chat-swiftui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACD0C1AE2A2E06EB00103CB2 /* StreamChatSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACD0C1AD2A2E06EB00103CB2 /* XCRemoteSwiftPackageReference "stream-chat-swiftui" */;
+			productName = StreamChatSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACD0C1942A2E067700103CB2 /* Project object */;
 }
