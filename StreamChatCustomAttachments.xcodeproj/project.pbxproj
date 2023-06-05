@@ -13,6 +13,7 @@
 		ACD0C1A72A2E067800103CB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD0C1A62A2E067800103CB2 /* Preview Assets.xcassets */; };
 		ACD0C1AF2A2E06EB00103CB2 /* StreamChatSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ACD0C1AE2A2E06EB00103CB2 /* StreamChatSwiftUI */; };
 		ACD0C1B12A2E07C500103CB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1B02A2E07C500103CB2 /* AppDelegate.swift */; };
+		ACD0C1B42A2E10A100103CB2 /* MyViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1B32A2E10A100103CB2 /* MyViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		ACD0C1A32A2E067800103CB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACD0C1A62A2E067800103CB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACD0C1B02A2E07C500103CB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACD0C1B32A2E10A100103CB2 /* MyViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 		ACD0C19E2A2E067700103CB2 /* StreamChatCustomAttachments */ = {
 			isa = PBXGroup;
 			children = (
-				ACD0C19F2A2E067700103CB2 /* StreamChatCustomAttachmentsApp.swift */,
-				ACD0C1A12A2E067700103CB2 /* ContentView.swift */,
-				ACD0C1A32A2E067800103CB2 /* Assets.xcassets */,
-				ACD0C1A52A2E067800103CB2 /* Preview Content */,
+				ACD0C1B22A2E109200103CB2 /* Stream */,
 				ACD0C1B02A2E07C500103CB2 /* AppDelegate.swift */,
+				ACD0C1A32A2E067800103CB2 /* Assets.xcassets */,
+				ACD0C1A12A2E067700103CB2 /* ContentView.swift */,
+				ACD0C1A52A2E067800103CB2 /* Preview Content */,
+				ACD0C19F2A2E067700103CB2 /* StreamChatCustomAttachmentsApp.swift */,
 			);
 			path = StreamChatCustomAttachments;
 			sourceTree = "<group>";
@@ -70,6 +73,14 @@
 				ACD0C1A62A2E067800103CB2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACD0C1B22A2E109200103CB2 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0C1B32A2E10A100103CB2 /* MyViewFactory.swift */,
+			);
+			path = Stream;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 				ACD0C1B12A2E07C500103CB2 /* AppDelegate.swift in Sources */,
 				ACD0C1A22A2E067700103CB2 /* ContentView.swift in Sources */,
 				ACD0C1A02A2E067700103CB2 /* StreamChatCustomAttachmentsApp.swift in Sources */,
+				ACD0C1B42A2E10A100103CB2 /* MyViewFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ import StreamChatSwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ChatChannelListView()
+        ChatChannelListView(viewFactory: MyViewFactory())
     }
 }
 
