@@ -22,7 +22,9 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-        streamChat = StreamChat(chatClient: chatClient)
+        let messageTypeResolver = CustomMessageResolver()
+        let utils = Utils(messageTypeResolver: messageTypeResolver)
+        streamChat = StreamChat(chatClient: chatClient, utils: utils)
         
         connectUser()
         
