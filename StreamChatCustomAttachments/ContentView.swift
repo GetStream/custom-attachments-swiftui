@@ -9,8 +9,13 @@ import SwiftUI
 import StreamChatSwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var myChannelListViewModel = MyChannelListViewModel()
+    
     var body: some View {
-        ChatChannelListView(viewFactory: MyViewFactory())
+        ChatChannelListView(
+            viewFactory: MyViewFactory(viewModel: myChannelListViewModel)
+        )
     }
 }
 

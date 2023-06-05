@@ -14,3 +14,8 @@ struct PaymentAttachmentPayload: AttachmentPayload, Identifiable {
     var id: String = UUID().uuidString
     var amount: Int
 }
+
+extension PaymentAttachmentPayload {
+    
+    static var preview: PaymentAttachmentPayload = PaymentAttachmentPayload(amount: 25)
+}
