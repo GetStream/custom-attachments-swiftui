@@ -13,6 +13,32 @@ class MyChannelListViewModel: ChatChannelListViewModel {
     
     @Injected(\.chatClient) var chatClient
     
+    var closeAttachments: (() -> Void)?
+    
+    func requestPayment(amount: Int) {
+        guard let selectedChannelId = selectedChannel?.id else {
+            print("Selected channel ID couldn't be retrieved")
+            return
+        }
+        let channelId = ChannelId(type: .messaging, id: selectedChannelId)
+        let payloadAttachment = PaymentAttachmentPayload(amount: amount)
+        let extraData: [String: RawJSON] = [
+            "paymentState": .string(PaymentState.requested.rawValue)
+        ]
+        
+        chatClient.channelController(for: channelId).createNewMessage(
+            text: "",
+            attachments: [AnyAttachmentPayload(payload: payloadAttachment)],
+            extraData: extraData
+        )
+        
+        withAnimation {
+            if let closeAttachments {
+                closeAttachments()
+            }
+        }
+    }
+    
     func updatePaymentPaid(messageId: MessageId, amount: Int) {
         guard let selectedChannelId = selectedChannel?.id else {
             print("Selected channel ID couldn't be retrieved")

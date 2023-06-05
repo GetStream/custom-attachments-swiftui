@@ -21,6 +21,7 @@
 		ACD0C1C02A2E137F00103CB2 /* PaymentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1BF2A2E137F00103CB2 /* PaymentState.swift */; };
 		ACD0C1C32A2E145D00103CB2 /* MyChannelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1C22A2E145D00103CB2 /* MyChannelListViewModel.swift */; };
 		ACD0C1C52A2E158F00103CB2 /* LinearGradient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1C42A2E158F00103CB2 /* LinearGradient+Constants.swift */; };
+		ACD0C1C72A2E175700103CB2 /* PaymentAttachmentPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1C62A2E175700103CB2 /* PaymentAttachmentPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		ACD0C1BF2A2E137F00103CB2 /* PaymentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentState.swift; sourceTree = "<group>"; };
 		ACD0C1C22A2E145D00103CB2 /* MyChannelListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChannelListViewModel.swift; sourceTree = "<group>"; };
 		ACD0C1C42A2E158F00103CB2 /* LinearGradient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+Constants.swift"; sourceTree = "<group>"; };
+		ACD0C1C62A2E175700103CB2 /* PaymentAttachmentPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAttachmentPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				ACD0C1BD2A2E133300103CB2 /* PaymentAttachmentView.swift */,
+				ACD0C1C62A2E175700103CB2 /* PaymentAttachmentPickerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				ACD0C1BE2A2E133300103CB2 /* PaymentAttachmentView.swift in Sources */,
 				ACD0C1B12A2E07C500103CB2 /* AppDelegate.swift in Sources */,
 				ACD0C1A22A2E067700103CB2 /* ContentView.swift in Sources */,
+				ACD0C1C72A2E175700103CB2 /* PaymentAttachmentPickerView.swift in Sources */,
 				ACD0C1A02A2E067700103CB2 /* StreamChatCustomAttachmentsApp.swift in Sources */,
 				ACD0C1B42A2E10A100103CB2 /* MyViewFactory.swift in Sources */,
 				ACD0C1BB2A2E121C00103CB2 /* CustomMessageResolver.swift in Sources */,

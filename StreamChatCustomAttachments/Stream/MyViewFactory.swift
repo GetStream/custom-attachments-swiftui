@@ -19,4 +19,11 @@ class MyViewFactory: ViewFactory {
         self.viewModel = viewModel
     }
     
+    func makeCustomAttachmentView(
+        addedCustomAttachments: [CustomAttachment],
+        onCustomAttachmentTap: @escaping (CustomAttachment) -> Void
+    ) -> some View {
+        PaymentAttachmentPickerView(viewModel: viewModel)
+    }
+    
 }
