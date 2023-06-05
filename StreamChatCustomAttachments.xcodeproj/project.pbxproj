@@ -14,6 +14,8 @@
 		ACD0C1AF2A2E06EB00103CB2 /* StreamChatSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = ACD0C1AE2A2E06EB00103CB2 /* StreamChatSwiftUI */; };
 		ACD0C1B12A2E07C500103CB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1B02A2E07C500103CB2 /* AppDelegate.swift */; };
 		ACD0C1B42A2E10A100103CB2 /* MyViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1B32A2E10A100103CB2 /* MyViewFactory.swift */; };
+		ACD0C1B72A2E118C00103CB2 /* PaymentAttachmentPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1B62A2E118C00103CB2 /* PaymentAttachmentPayload.swift */; };
+		ACD0C1B92A2E11BF00103CB2 /* AttachmentType+CustomPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1B82A2E11BF00103CB2 /* AttachmentType+CustomPayload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		ACD0C1A62A2E067800103CB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACD0C1B02A2E07C500103CB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACD0C1B32A2E10A100103CB2 /* MyViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewFactory.swift; sourceTree = "<group>"; };
+		ACD0C1B62A2E118C00103CB2 /* PaymentAttachmentPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAttachmentPayload.swift; sourceTree = "<group>"; };
+		ACD0C1B82A2E11BF00103CB2 /* AttachmentType+CustomPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttachmentType+CustomPayload.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +82,19 @@
 		ACD0C1B22A2E109200103CB2 /* Stream */ = {
 			isa = PBXGroup;
 			children = (
+				ACD0C1B52A2E117A00103CB2 /* AttachmentPayload */,
 				ACD0C1B32A2E10A100103CB2 /* MyViewFactory.swift */,
 			);
 			path = Stream;
+			sourceTree = "<group>";
+		};
+		ACD0C1B52A2E117A00103CB2 /* AttachmentPayload */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0C1B62A2E118C00103CB2 /* PaymentAttachmentPayload.swift */,
+				ACD0C1B82A2E11BF00103CB2 /* AttachmentType+CustomPayload.swift */,
+			);
+			path = AttachmentPayload;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +177,8 @@
 				ACD0C1A22A2E067700103CB2 /* ContentView.swift in Sources */,
 				ACD0C1A02A2E067700103CB2 /* StreamChatCustomAttachmentsApp.swift in Sources */,
 				ACD0C1B42A2E10A100103CB2 /* MyViewFactory.swift in Sources */,
+				ACD0C1B92A2E11BF00103CB2 /* AttachmentType+CustomPayload.swift in Sources */,
+				ACD0C1B72A2E118C00103CB2 /* PaymentAttachmentPayload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
