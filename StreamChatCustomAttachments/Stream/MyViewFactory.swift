@@ -19,6 +19,13 @@ class MyViewFactory: ViewFactory {
         self.viewModel = viewModel
     }
     
+    func makeLeadingComposerView(state: Binding<PickerTypeState>, channelConfig: ChannelConfig?) -> some View {
+        viewModel.closeAttachments = {
+            state.wrappedValue = .expanded(.none)
+        }
+        return LeadingComposerView(pickerTypeState: state)
+    }
+    
     func makeCustomAttachmentView(
         addedCustomAttachments: [CustomAttachment],
         onCustomAttachmentTap: @escaping (CustomAttachment) -> Void

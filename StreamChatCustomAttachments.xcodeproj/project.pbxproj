@@ -22,6 +22,7 @@
 		ACD0C1C32A2E145D00103CB2 /* MyChannelListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1C22A2E145D00103CB2 /* MyChannelListViewModel.swift */; };
 		ACD0C1C52A2E158F00103CB2 /* LinearGradient+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1C42A2E158F00103CB2 /* LinearGradient+Constants.swift */; };
 		ACD0C1C72A2E175700103CB2 /* PaymentAttachmentPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1C62A2E175700103CB2 /* PaymentAttachmentPickerView.swift */; };
+		ACD0C1C92A2E190C00103CB2 /* LeadingComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1C82A2E190C00103CB2 /* LeadingComposerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		ACD0C1C22A2E145D00103CB2 /* MyChannelListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChannelListViewModel.swift; sourceTree = "<group>"; };
 		ACD0C1C42A2E158F00103CB2 /* LinearGradient+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LinearGradient+Constants.swift"; sourceTree = "<group>"; };
 		ACD0C1C62A2E175700103CB2 /* PaymentAttachmentPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAttachmentPickerView.swift; sourceTree = "<group>"; };
+		ACD0C1C82A2E190C00103CB2 /* LeadingComposerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingComposerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			children = (
 				ACD0C1BD2A2E133300103CB2 /* PaymentAttachmentView.swift */,
 				ACD0C1C62A2E175700103CB2 /* PaymentAttachmentPickerView.swift */,
+				ACD0C1C82A2E190C00103CB2 /* LeadingComposerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				ACD0C1C52A2E158F00103CB2 /* LinearGradient+Constants.swift in Sources */,
 				ACD0C1B92A2E11BF00103CB2 /* AttachmentType+CustomPayload.swift in Sources */,
 				ACD0C1B72A2E118C00103CB2 /* PaymentAttachmentPayload.swift in Sources */,
+				ACD0C1C92A2E190C00103CB2 /* LeadingComposerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
