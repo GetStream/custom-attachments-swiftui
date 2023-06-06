@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC82F89B2A2FD28C00F62F6D /* SelectedCustomAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC82F89A2A2FD28C00F62F6D /* SelectedCustomAttachment.swift */; };
 		ACD0C1A02A2E067700103CB2 /* StreamChatCustomAttachmentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C19F2A2E067700103CB2 /* StreamChatCustomAttachmentsApp.swift */; };
 		ACD0C1A22A2E067700103CB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0C1A12A2E067700103CB2 /* ContentView.swift */; };
 		ACD0C1A42A2E067800103CB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD0C1A32A2E067800103CB2 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC82F89A2A2FD28C00F62F6D /* SelectedCustomAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCustomAttachment.swift; sourceTree = "<group>"; };
 		ACD0C19C2A2E067700103CB2 /* StreamChatCustomAttachments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamChatCustomAttachments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD0C19F2A2E067700103CB2 /* StreamChatCustomAttachmentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamChatCustomAttachmentsApp.swift; sourceTree = "<group>"; };
 		ACD0C1A12A2E067700103CB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC82F8992A2FD27A00F62F6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC82F89A2A2FD28C00F62F6D /* SelectedCustomAttachment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		ACD0C1932A2E067700103CB2 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		ACD0C1B22A2E109200103CB2 /* Stream */ = {
 			isa = PBXGroup;
 			children = (
+				AC82F8992A2FD27A00F62F6D /* Model */,
 				ACD0C1C12A2E144C00103CB2 /* ViewModel */,
 				ACD0C1BC2A2E132700103CB2 /* View */,
 				ACD0C1B52A2E117A00103CB2 /* AttachmentPayload */,
@@ -222,6 +233,7 @@
 				ACD0C1C52A2E158F00103CB2 /* LinearGradient+Constants.swift in Sources */,
 				ACD0C1B92A2E11BF00103CB2 /* AttachmentType+CustomPayload.swift in Sources */,
 				ACD0C1B72A2E118C00103CB2 /* PaymentAttachmentPayload.swift in Sources */,
+				AC82F89B2A2FD28C00F62F6D /* SelectedCustomAttachment.swift in Sources */,
 				ACD0C1C92A2E190C00103CB2 /* LeadingComposerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

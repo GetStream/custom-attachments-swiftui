@@ -13,7 +13,16 @@ class MyChannelListViewModel: ChatChannelListViewModel {
     
     @Injected(\.chatClient) var chatClient
     
+    @Published var selectedCustomAttachment: SelectedCustomAttachment = .payment
+    
+    var onPickerStateChange: ((AttachmentPickerState) -> Void)?
     var closeAttachments: (() -> Void)?
+    
+    func tryCallingPickerStateChange() {
+        if let onPickerStateChange {
+            onPickerStateChange(.custom)
+        }
+    }
     
     func requestPayment(amount: Int) {
         guard let selectedChannelId = selectedChannel?.id else {

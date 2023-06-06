@@ -11,6 +11,7 @@ import StreamChatSwiftUI
 struct LeadingComposerView: View {
     
     @Binding var pickerTypeState: PickerTypeState
+    @ObservedObject var viewModel: MyChannelListViewModel
     
     @Injected(\.images) var images
     @Injected(\.colors) var colors
@@ -21,6 +22,7 @@ struct LeadingComposerView: View {
             case let .expanded(attachmentPickerType):
                 Button {
                     withAnimation {
+                        viewModel.tryCallingPickerStateChange()
                         if attachmentPickerType == .custom {
                             pickerTypeState = .expanded(.none)
                         } else {
@@ -66,6 +68,6 @@ struct LeadingComposerView: View {
 
 struct LeadingComposerView_Previews: PreviewProvider {
     static var previews: some View {
-        LeadingComposerView(pickerTypeState: .constant(.expanded(.custom)))
+        LeadingComposerView(pickerTypeState: .constant(.expanded(.custom)), viewModel: MyChannelListViewModel())
     }
 }

@@ -14,7 +14,8 @@ struct ContentView: View {
     
     var body: some View {
         ChatChannelListView(
-            viewFactory: MyViewFactory(viewModel: myChannelListViewModel)
+            viewFactory: MyViewFactory(viewModel: myChannelListViewModel),
+            viewModel: myChannelListViewModel
         )
     }
 }
